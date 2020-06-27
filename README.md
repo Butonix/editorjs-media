@@ -61,10 +61,10 @@ var editor = EditorJS({
 
 Image Tool supports these configuration parameters:
 
-| Field         | Type              | Description                                                                   |
-| ------------- | ----------------- | ----------------------------------------------------------------------------- |
-| onSelectMedia | `func(done(url))` | Function for invoking external media library and returning selected media URL |
-| buttonContent | `string`          | Allows to override HTML content of «Browse Media Library» button              |
+| Field         | Type                    | Description                                                                             |
+| ------------- | ----------------------- | --------------------------------------------------------------------------------------- |
+| onSelectMedia | `function(done(media))` | **Required:** Function for invoking external media library and returning selected media |
+| buttonContent | `string`                | Allows to override HTML content of «Browse Media Library» button                        |
 
 ## Output data
 
