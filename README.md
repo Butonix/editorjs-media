@@ -10,12 +10,18 @@ Media Browser Block for the [Editor.js](https://editorjs.io).
 
 ## Installation
 
-### Install via NPM
+### Install via NPM/Yarn
 
 Get the package
 
 ```shell
-npm i --save-dev @illumini/editorjs-media
+npm i @illumini/editorjs-media
+```
+
+or
+
+```shell
+yarn add @illumini/editorjs-media
 ```
 
 Include module at your application
