@@ -1,0 +1,69 @@
+{
+  "name": "@illumini/editorjs-media",
+  "version": "0.1.0",
+  "description": "Media Browser Tool for Editor.js.",
+  "main": "./dist/bundle.js",
+  "contributors": [
+    "Wayne Haffenden <wayne@illumini.io>"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/IlluminiTech/editorjs-media"
+  },
+  "scripts": {
+    "build": "webpack --mode production",
+    "build:dev": "webpack --mode development --watch",
+    "format": "prettier --write \"**/*.{js,json,md}\"",
+    "lint": "eslint ."
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,json,md}": [
+      "prettier --write"
+    ],
+    "*.js": [
+      "eslint --fix"
+    ]
+  },
+  "keywords": [
+    "codex editor",
+    "tool",
+    "media",
+    "editor.js",
+    "editor",
+    "illumini"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/IlluminiTech/editorjs-media/issues"
+  },
+  "homepage": "https://github.com/IlluminiTech/editorjs-media",
+  "devDependencies": {
+    "@babel/core": "^7.10.3",
+    "@babel/plugin-transform-runtime": "^7.10.3",
+    "@babel/preset-env": "^7.10.3",
+    "@babel/runtime": "^7.10.3",
+    "@illumini/eslint-config": "^0.4.3",
+    "@illumini/prettier-config": "^0.1.4",
+    "babel-eslint": "^10.1.0",
+    "babel-loader": "^8.1.0",
+    "css-loader": "^3.6.0",
+    "eslint": "^7.3.1",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-loader": "^4.0.2",
+    "husky": "^4.2.5",
+    "lint-staged": "^10.2.11",
+    "postcss-loader": "^3.0.0",
+    "postcss-nested": "^4.2.1",
+    "postcss-nested-ancestors": "^2.0.0",
+    "prettier": "^2.0.5",
+    "style-loader": "^1.2.1",
+    "svg-inline-loader": "^0.8.2",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.12"
+  }
+}

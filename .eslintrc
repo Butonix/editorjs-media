@@ -1,0 +1,7 @@
+{
+  "extends": "@illumini/eslint-config",
+  "env": {
+    "browser": true,
+    "node": true
+  }
+}

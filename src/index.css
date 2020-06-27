@@ -1,0 +1,14 @@
+.media-browser {
+  display: block;
+
+  &__media {
+    border-radius: 3px;
+    overflow: hidden;
+    margin-bottom: 10px;
+
+    &-picture {
+      max-width: 100%;
+      display: block;
+    }
+  }
+}
